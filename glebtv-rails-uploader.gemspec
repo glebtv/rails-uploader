@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.md"]
   s.require_paths = ["lib"]
   
-  s.add_dependency "jquery-ui-rails", '~> 5.0.3'
+  s.add_dependency "jquery-ui-rails"#, '~> 5.0.3'
 
   s.add_development_dependency "carrierwave"
   s.add_development_dependency "mongoid"
