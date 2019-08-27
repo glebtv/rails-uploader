@@ -1,8 +1,9 @@
-.uploader-dnd-area { 
+.uploader-dnd-area {
   border: 1px dashed #ccc;
 	padding: 15px 0px 15px 20px;
 	color: #b1b1b1;
 	overflow: hidden;
+  user-select: none;
 }
 .uploader-dnd-area:active {
 	border-color: #d169d9;
@@ -13,7 +14,7 @@
 .uploader-dnd-hints {
   text-align: center;
   padding: 30px 0;
-  overflow: hidden;	
+  overflow: hidden;
   clear: both;
 }
 .uploader-dnd-hints .uploader-button {
@@ -37,7 +38,7 @@
 .uploader-button {
 	display: inline-block;
 	background: #972da0;
-	background: linear-gradient(left top, left bottom, #982da1, #892891); 
+	background: linear-gradient(left top, left bottom, #982da1, #892891);
 	border: solid 1px #5f1c65;
 	border-radius: 2px;
   -moz-border-radius: 2px;
@@ -53,14 +54,14 @@
 }
 .uploader-button:hover {
 	background: #972da0;
-  background: linear-gradient(top,  #90179a,  #7d2485); 
+  background: linear-gradient(top,  #90179a,  #7d2485);
 	-moz-box-shadow: 0 1px 3px #aaa;
   -webkit-box-shadow: 0 1px 3px #aaa;
   box-shadow: 0 1px 3px #aaa;
 }
 .uploader-button:active {
   background: #8e1898;
-  background: linear-gradient(top,  #8e1898,  #7f2387); 
+  background: linear-gradient(top,  #8e1898,  #7f2387);
   box-shadow: inset 0 0 4px #5f1c65;
 }
 .uploader-button::-moz-focus-inner {
@@ -125,7 +126,7 @@ input[disabled].uploader-button.gray {
 .uploader-dnd-area .attach_item:active {
   box-shadow: 0 0 5px #d2d2d2;
   border: solid 1px #cf63d8;
-}	
+}
 
 .uploader-dnd-area .attach_item a.del_btn {
   width: 19px;
@@ -156,7 +157,7 @@ input[disabled].uploader-button.gray {
   float: right;
   width: 130px;
   overflow: hidden;
-}		
+}
 .uploader-dnd-area .attach_item .fileName {
   color: #000;
   font-size: 14px;
