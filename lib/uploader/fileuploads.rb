@@ -69,7 +69,8 @@ module Uploader
       def fileupload_multiple?(method)
         association = reflect_on_association(method.to_sym)
 
-        return true if association.is_a?(::Mongoid::Association::Referenced::HasMany)
+        return true if defined?(::Mongoid::Association::Referenced::HasMany) &&
+                       association.is_a?(::Mongoid::Association::Referenced::HasMany)
 
         # many? for Mongoid, :collection? for AR
         method_name = association.respond_to?(:many?) ? :many? : :collection?
